@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Place an Order</title>
+</head>
+<body>
+    <div class="container" id="order">
+        <h2 style="text-align:center;">Place an Order</h2>
+        
+        <form>
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td><label for="product">Product Name:</label></td>
+                    <td>
+                        <select id="product" name="product" required>
+                            <option value="">-- Select Product --</option>
+                            <option value="1">Product 1</option>
+                            <option value="2">Product 2</option>
+                            <option value="3">Product 3</option>
+                            <!-- These would be populated from the database in the ASP.NET version -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="quantity">Quantity:</label></td>
+                    <td><input type="number" id="quantity" name="quantity" min="1" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <hr><br>
+                        <button type="submit">Place Order</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        <div style="text-align:center; margin-top: 20px;" id="messageArea">
+            <!-- This area would display success or error messages in the ASP.NET version -->
+        </div>
+    </div>
+</body>
+</html>
